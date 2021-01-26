@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Fitness</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    body {
+        background: url('Resources/Background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #left {
+        display: inline-block;
+        position: absolute;
+        left: 12px;
+        top: 10px;
+    }
+
+    #mid {
+        width: 37%;
+        margin: 10px auto;
+    }
+
+    #right {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        display: inline-block;
+    }
+
+    #left img {
+        margin-left: 21px;
+        width: 40px;
+        filter: invert(100%);
+    }
+
+    #nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 4px;
+        padding: 12px 24px;
+
+    }
+
+    #nav ul li a:hover {
+        text-decoration: underline;
+        color: red;
+
+    }
+
+    #nav ul li a {
+        text-decoration: none;
+    }
+
+    #right img {
+        width: 23px;
+        margin: 2px 9px;
+    }
+    #right img:hover {
+        width: 26px;
+        margin: 2px 9px;
+    }
+
+    #label {
+        text-align: center;
+    }
+
+    .container {
+        border: 2px solid white;
+        width: 28%;
+        margin: 93px 35px;
+        padding: 43px 48px;
+        border-radius: 10px;
+    }
+
+    .container:hover{
+        border: 2px solid red;
+        width: 28%;
+        margin: 93px 35px;
+        padding: 43px 48px;
+        border-radius: 10px;
+    }
+    .form input{
+        text-align: center;
+        border-radius: 6px;
+        margin-bottom: 6px;
+        padding: 5px;
+        background-color: black;
+        display: block;
+        width: 100%;
+        border: none;
+    }
+    .form input:hover{
+        border: 2px solid red;
+    }
+    #form-heading{
+        margin: 13px;
+        text-align: center;
+    }
+    .btn {
+        margin: 4px;
+        border: none;
+        background-color: black;
+        border-radius: 6px;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        margin: 4px;
+        border: none;
+        background-color: red;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header id="header">
+        <div id="left">
+            <img src="Resources/logo.png" alt="logo">
+            <div id="label">Kiran Fitness</div>
+        </div>
+        <div id="mid">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="right">
+            <div id="label">Connect Us</div>
+            <img src="Resources/connected.png" alt="">
+            <img src="Resources/connected_fb.png" alt="">
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="backed.php">
+            <div id="form-heading"><h3>Join Now To Get Fit In Your Old Age</h3></div>
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+                <input type="text" name="" id="" placeholder="Enter Your Email">
+                <input type="text" name="" id="" placeholder="Enter Your Mobile Number">
+                <input type="text" name="" id="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit Now</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
